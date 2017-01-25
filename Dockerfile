@@ -1,5 +1,5 @@
-FROM alpine:3.5
+FROM alpine:edge
 
 MAINTAINER Quinten Krijger
 
-RUN apk add --update bash curl perl-net-telnet && rm -rf /var/cache/apk/*
+RUN apk add --update bash curl perl-net-telnet httpie && rm -rf /var/cache/apk/*
